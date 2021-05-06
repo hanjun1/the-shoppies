@@ -41,6 +41,7 @@
 
 .SearchResults .movie-details-container {
   width: 70%;
+  height: 170px;
 }
 
 .SearchResults .movie-details-container form {

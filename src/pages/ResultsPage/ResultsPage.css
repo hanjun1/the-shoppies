@@ -3,6 +3,18 @@
   margin: auto;
 }
 
+.ResultsPage .title {
+  margin: 0rem 1rem;
+  font-size: 5rem;
+  padding: 2rem 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ResultsPage span {
+  color: rgb(101, 41, 243);
+}
+
 .ResultsPage .results-container {
   display: flex;
 }

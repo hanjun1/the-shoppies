@@ -6,3 +6,72 @@
     rgb(23 32 38 / 6%) 0px 2px 1px -1px, rgb(23 32 38 / 10%) 0px 1px 3px 0px;
   width: 50%;
 }
+
+.Nominations h2 {
+  color: rgb(101, 41, 243);
+}
+
+.Nominations .movies-container {
+  margin: 1rem;
+}
+
+.Nominations .movies-container p {
+  margin: 0;
+}
+
+.Nominations .movie-container {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.Nominations .image-container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nominations .image-container img {
+  max-width: 100px;
+  border-radius: 0.5rem;
+}
+
+.Nominations .movie-details-container {
+  width: 70%;
+  height: 170px;
+}
+
+.Nominations .movie-details-container form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.Nominations .nominate-button-container {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+}
+
+.Nominations .nominate-button-container button {
+  width: 10rem;
+  height: 2.3rem;
+  font-size: 1rem;
+  background: rgb(101, 41, 243);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.Nominations .nominate-button-container p {
+  color: rgb(101, 41, 243);
+  font-size: 1rem;
+  line-height: 2.3rem;
+  font-weight: bold;
+}

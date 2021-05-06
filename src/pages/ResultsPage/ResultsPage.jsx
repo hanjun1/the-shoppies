@@ -3,13 +3,13 @@ import "./ResultsPage.css";
 import Nominations from "../../components/Nominations/Nominations";
 import SearchResults from "../../components/SearchResults/SearchResults";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import Banner from "../../components/Banner/Banner";
 
 function ResultsPage(props) {
   return (
     <div className="ResultsPage">
-      <Banner nominated={props.nominated} />
-      <h1>The Shoppies</h1>
+      <p class="title">
+        The <span>Shoppies</span> 🎉
+      </p>
       <SearchBar
         getMovie={props.getMovie}
         search={props.search}

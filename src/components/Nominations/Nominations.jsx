@@ -24,7 +24,9 @@ function Nominations(props) {
                 <p>
                   {movie.Title} ({movie.Year}) ({movie.Type})
                 </p>
-                <button>Remove</button>
+                <div className="nominate-button-container">
+                  <button>Remove</button>
+                </div>
               </form>
             </div>
           </div>

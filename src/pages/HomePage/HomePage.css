@@ -1,0 +1,15 @@
+.HomePage {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.HomePage .title {
+  margin: 0rem 1rem;
+  font-size: 11rem;
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+.HomePage span {
+  color: rgb(101, 41, 243);
+}

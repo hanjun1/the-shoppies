@@ -5,8 +5,14 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 function HomePage(props) {
   return (
     <div className="HomePage">
-      <h1>Welcome to Shoppies!</h1>
-      <SearchBar />
+      <p class="title">
+        The <span>Shoppies</span> 🎉
+      </p>
+      <SearchBar
+        getMovie={props.getMovie}
+        search={props.search}
+        setSearch={props.setSearch}
+      />
     </div>
   );
 }

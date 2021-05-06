@@ -1,0 +1,12 @@
+.Banner {
+  position: fixed;
+  width: 100%;
+  padding: 1.5rem;
+  background: rgb(255, 235, 171);
+  transition: all 0.5s ease-in-out;
+}
+
+.Banner p {
+  margin: 0;
+  text-align: center;
+}
