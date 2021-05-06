@@ -18,10 +18,20 @@ function SearchResults(props) {
         console.log("bad fetch!");
       }
       let movie = await response.json();
+      console.log(movie);
       props.setNominated([...props.nominated, movie]);
     } catch (err) {
       console.log(err);
     }
+  };
+
+  const checkIfNominated = (movieId) => {
+    for (let i = 0; i < props.nominated.length; i++) {
+      if (props.nominated[i].imdbID === movieId) {
+        return true;
+      }
+    }
+    return false;
   };
 
   return (
@@ -36,7 +46,12 @@ function SearchResults(props) {
                   <li>
                     <form onSubmit={handleSubmit}>
                       <input type="hidden" value={movie.imdbID} name="movie" />
-                      {movie.Title} ({movie.Year})<button>Nominate</button>
+                      {movie.Title} ({movie.Year})
+                      {checkIfNominated(movie.imdbID) ? (
+                        <>Already Nominated</>
+                      ) : (
+                        <button>Nominate</button>
+                      )}
                     </form>
                   </li>
                 </div>
