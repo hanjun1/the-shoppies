@@ -1,0 +1,13 @@
+.SearchResults .movies-container {
+}
+
+.SearchResults .movie-container {
+  /* width: 300px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* margin: auto; */
+}
+
+.SearchResults .movie-container img {
+  /* max-width: 100px; */
+}
