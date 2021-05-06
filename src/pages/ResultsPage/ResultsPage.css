@@ -1,0 +1,8 @@
+.ResultsPage {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.ResultsPage .results-container {
+  display: flex;
+}

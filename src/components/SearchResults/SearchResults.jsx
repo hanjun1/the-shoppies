@@ -35,28 +35,34 @@ function SearchResults(props) {
 
   return (
     <div className="SearchResults">
-      <h1>Results for "{props.search}"...</h1>
+      <h2>
+        Results for "<span>{props.search}</span>"...
+      </h2>
       {props.result.Response === "True" ? (
         <div className="movies-container">
-          <ul>
-            {props.result.Search.map((movie) => (
-              <div className="movie-container">
-                <div className="movie-details-container">
-                  <li>
-                    <form onSubmit={handleSubmit}>
-                      <input type="hidden" value={movie.imdbID} name="movie" />
-                      {movie.Title} ({movie.Year})
-                      {checkIfNominated(movie.imdbID) ? (
-                        <>Already Nominated</>
-                      ) : (
-                        <button>Nominate</button>
-                      )}
-                    </form>
-                  </li>
-                </div>
+          {console.log(props.result)}
+          {props.result.Search.map((movie) => (
+            <div className="movie-container">
+              <div className="image-container">
+                <img src={movie.Poster} alt="" />
               </div>
-            ))}
-          </ul>
+              <div className="movie-details-container">
+                <form onSubmit={handleSubmit}>
+                  <input type="hidden" value={movie.imdbID} name="movie" />
+                  <p>
+                    {movie.Title} ({movie.Year}) ({movie.Type})
+                  </p>
+                  <div className="nominate-button-container">
+                    {checkIfNominated(movie.imdbID) ? (
+                      <p>Already Nominated</p>
+                    ) : (
+                      <button>Nominate</button>
+                    )}
+                  </div>
+                </form>
+              </div>
+            </div>
+          ))}
         </div>
       ) : (
         <h1>There are no results!</h1>

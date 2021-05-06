@@ -11,18 +11,24 @@ function Nominations(props) {
 
   return (
     <div className="Nominations">
-      <h1>Nominations</h1>
+      <h2>Nominations</h2>
       <div className="nomination-container">
-        <ul>
-          {props.nominated.map((movie) => (
-            <li>
+        {props.nominated.map((movie) => (
+          <div className="movie-container">
+            <div className="image-container">
+              <img src={movie.Poster} alt="" />
+            </div>
+            <div className="movie-details-container">
               <form onSubmit={handleSubmit}>
                 <input type="hidden" value={movie.imdbID} name="movie" />
-                {movie.Title} ({movie.Year})<button>Remove</button>
+                <p>
+                  {movie.Title} ({movie.Year}) ({movie.Type})
+                </p>
+                <button>Remove</button>
               </form>
-            </li>
-          ))}
-        </ul>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

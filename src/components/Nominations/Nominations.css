@@ -1,0 +1,8 @@
+.Nominations {
+  padding: 1rem;
+  margin: 1rem;
+  background: #fff;
+  box-shadow: rgb(23 32 38 / 7%) 0px 1px 1px 0px,
+    rgb(23 32 38 / 6%) 0px 2px 1px -1px, rgb(23 32 38 / 10%) 0px 1px 3px 0px;
+  width: 50%;
+}
