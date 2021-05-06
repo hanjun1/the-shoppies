@@ -18,7 +18,6 @@ function SearchResults(props) {
         console.log("bad fetch!");
       }
       let movie = await response.json();
-      console.log(movie);
       props.setNominated([...props.nominated, movie]);
     } catch (err) {
       console.log(err);
@@ -41,7 +40,7 @@ function SearchResults(props) {
         <div className="movies-container">
           <ul>
             {props.result.Search.map((movie) => (
-              <div className="movie-container" key={movie.imdbID}>
+              <div className="movie-container">
                 <div className="movie-details-container">
                   <li>
                     <form onSubmit={handleSubmit}>
