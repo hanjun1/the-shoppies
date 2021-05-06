@@ -13,7 +13,10 @@ function ResultsPage(props) {
         search={props.search}
         setSearch={props.setSearch}
       />
-      <Nominations />
+      <Nominations
+        nominated={props.nominated}
+        setNominated={props.setNominated}
+      />
       <SearchResults
         result={props.result}
         search={props.search}

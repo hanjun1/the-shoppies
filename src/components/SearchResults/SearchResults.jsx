@@ -2,10 +2,26 @@ import React from "react";
 import "./SearchResults.css";
 
 function SearchResults(props) {
+  const BASE_URL = "http://www.omdbapi.com/?apikey=f724aaa&";
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.setNominated([...props.nominated, e.target.movie.value]);
-    console.dir(e.target.movie.value);
+    addNomination(e.target.movie.value);
+  };
+
+  const addNomination = async (movieId) => {
+    try {
+      let response = await fetch(BASE_URL + "i=" + movieId);
+      if (response.ok) {
+        console.log("good fetch!");
+      } else if (!response.ok) {
+        console.log("bad fetch!");
+      }
+      let movie = await response.json();
+      props.setNominated([...props.nominated, movie]);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

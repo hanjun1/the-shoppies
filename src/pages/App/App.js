@@ -3,7 +3,7 @@ import "./App.css";
 import ResultsPage from "../ResultsPage/ResultsPage";
 import HomePage from "../HomePage/HomePage";
 
-const BASE_URL = "http://www.omdbapi.com/?apikey=f724aaa&s=";
+const BASE_URL = "http://www.omdbapi.com/?apikey=f724aaa&";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -12,7 +12,7 @@ function App() {
 
   const getMovie = async (search) => {
     try {
-      let response = await fetch(BASE_URL + search);
+      let response = await fetch(BASE_URL + "s=" + search);
       if (response.ok) {
         console.log("okay!");
       } else {
