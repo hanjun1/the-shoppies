@@ -5,7 +5,8 @@
   box-shadow: rgb(23 32 38 / 7%) 0px 1px 1px 0px,
     rgb(23 32 38 / 6%) 0px 2px 1px -1px, rgb(23 32 38 / 10%) 0px 1px 3px 0px;
   width: 50%;
-  /* overflow-y: auto; */
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .SearchResults span {
@@ -25,6 +26,9 @@
   width: 100%;
   padding: 0.5rem 0rem;
   border-bottom: 1px solid rgb(206, 206, 206);
+  max-height: 170px;
+  height: 20vw;
+  min-height: 110px;
 }
 
 .SearchResults .image-container {
@@ -41,7 +45,6 @@
 
 .SearchResults .movie-details-container {
   width: 70%;
-  height: 170px;
 }
 
 .SearchResults .movie-details-container form {
@@ -75,4 +78,34 @@
   font-size: 1rem;
   line-height: 2.3rem;
   font-weight: bold;
+}
+
+.SearchResults #disable-button {
+  background: rgb(95, 95, 95);
+}
+
+.SearchResults .no-results {
+  text-align: center;
+  padding: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .SearchResults img {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 695px) {
+  .SearchResults {
+    width: 100%;
+  }
+  .SearchResults img {
+    width: 12vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .SearchResults img {
+    width: 18vw;
+  }
 }

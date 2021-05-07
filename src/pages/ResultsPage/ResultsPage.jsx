@@ -7,7 +7,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 function ResultsPage(props) {
   return (
     <div className="ResultsPage">
-      <p class="title">
+      <p className="title">
         The <span>Shoppies</span> 🎉
       </p>
       <SearchBar

@@ -5,6 +5,8 @@
   box-shadow: rgb(23 32 38 / 7%) 0px 1px 1px 0px,
     rgb(23 32 38 / 6%) 0px 2px 1px -1px, rgb(23 32 38 / 10%) 0px 1px 3px 0px;
   width: 50%;
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .Nominations h2 {
@@ -24,6 +26,9 @@
   width: 100%;
   padding: 0.5rem 0rem;
   border-bottom: 1px solid rgb(206, 206, 206);
+  max-height: 170px;
+  height: 20vw;
+  min-height: 110px;
 }
 
 .Nominations .image-container {
@@ -40,7 +45,6 @@
 
 .Nominations .movie-details-container {
   width: 70%;
-  height: 170px;
 }
 
 .Nominations .movie-details-container form {
@@ -74,4 +78,19 @@
   font-size: 1rem;
   line-height: 2.3rem;
   font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .Nominations img {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 695px) {
+  .Nominations {
+    width: 100%;
+  }
+  .Nominations img {
+    width: 12vw;
+  }
 }

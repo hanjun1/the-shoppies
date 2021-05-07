@@ -40,11 +40,10 @@ function SearchResults(props) {
       </h2>
       {props.result.Response === "True" ? (
         <div className="movies-container">
-          {console.log(props.result)}
           {props.result.Search.map((movie) => (
             <div className="movie-container">
               <div className="image-container">
-                <img src={movie.Poster} alt="" />
+                <img src={movie.Poster} alt="NOT AVAILABLE" />
               </div>
               <div className="movie-details-container">
                 <form onSubmit={handleSubmit}>
@@ -55,6 +54,10 @@ function SearchResults(props) {
                   <div className="nominate-button-container">
                     {checkIfNominated(movie.imdbID) ? (
                       <p>Already Nominated</p>
+                    ) : props.nominated.length >= 5 ? (
+                      <button id="disable-button" disabled>
+                        Nominate
+                      </button>
                     ) : (
                       <button>Nominate</button>
                     )}
@@ -65,7 +68,7 @@ function SearchResults(props) {
           ))}
         </div>
       ) : (
-        <h1>There are no results!</h1>
+        <p className="no-results">There are no results!</p>
       )}
     </div>
   );

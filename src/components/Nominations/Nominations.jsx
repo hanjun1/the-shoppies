@@ -16,7 +16,7 @@ function Nominations(props) {
         {props.nominated.map((movie) => (
           <div className="movie-container">
             <div className="image-container">
-              <img src={movie.Poster} alt="" />
+              <img src={movie.Poster} alt="NOT AVAILABLE" />
             </div>
             <div className="movie-details-container">
               <form onSubmit={handleSubmit}>

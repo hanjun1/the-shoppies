@@ -5,7 +5,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 function HomePage(props) {
   return (
     <div className="HomePage">
-      <p class="title">
+      <p className="title">
         The <span>Shoppies</span> 🎉
       </p>
       <SearchBar
