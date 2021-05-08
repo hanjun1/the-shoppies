@@ -15,6 +15,8 @@ Fall 2021 Frontend Developer Internship Challenge by Ryan Kim
 
 ## Screenshots
 
+![](https://media.giphy.com/media/vH4uOv8Fz1cYYq1g2N/giphy.gif)
+
 Desktop View:
 
 <img src="https://imgur.com/fXGYuay.png" width="750px">
