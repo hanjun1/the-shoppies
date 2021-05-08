@@ -2,7 +2,7 @@
 
 Fall 2021 Frontend Developer Internship Challenge by Ryan Kim
 
-[Click here] to see it in action!
+[Click here](https://hanjun1.github.io/the-shoppies/) to see it in action!
 
 ## Features
 
@@ -11,8 +11,20 @@ Fall 2021 Frontend Developer Internship Challenge by Ryan Kim
 - View the list of films nominated
 - Remove a nominee from nomination list
 - Responsive for all tablets, mobile and desktop view!
-- Infinite scrolling until end of results
+- Infinite scrolling until it reaches end of results (re-fetches everytime you scroll to the bottom!)
 
 ## Screenshots
 
+Desktop View:
+
+<img src="https://imgur.com/fXGYuay.png" width="750px">
+
+Mobile View:
+
+|                     Search Results                      |                   List of Nominations                   |
+| :-----------------------------------------------------: | :-----------------------------------------------------: |
+| <img src="https://imgur.com/yQ5FyKj.png" width="300px"> | <img src="https://imgur.com/9MSU68d.png" width="300px"> |
+
 ## Technologies Used
+
+- HTML, CSS and ReactJS
