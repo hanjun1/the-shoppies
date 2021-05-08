@@ -22,11 +22,8 @@ function App() {
 
   const getMovie = async () => {
     try {
-      console.log(page);
       let response = await fetch(BASE_URL + "s=" + search + "&page=" + page);
-      if (response.ok) {
-        console.log("okay!");
-      } else {
+      if (!response.ok) {
         console.log("fetch error!");
       }
       let searchResult = await response.json();

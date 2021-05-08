@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import "./SearchResults.css";
 
 function SearchResults(props) {
@@ -12,9 +13,7 @@ function SearchResults(props) {
   const addNomination = async (movieId) => {
     try {
       let response = await fetch(BASE_URL + "i=" + movieId);
-      if (response.ok) {
-        console.log("good fetch!");
-      } else if (!response.ok) {
+      if (!response.ok) {
         console.log("bad fetch!");
       }
       let movie = await response.json();
@@ -55,11 +54,10 @@ function SearchResults(props) {
       <h2>
         Results for "<span>{props.search}</span>"...
       </h2>
-      {console.log(props.result)}
       {props.result.length > 0 ? (
         <div className="movies-container">
           {props.result.map((movie) => (
-            <div className="movie-container">
+            <div className="movie-container" key={uuidv4()}>
               <div className="image-container">
                 <img src={movie.Poster} alt="NOT AVAILABLE" />
               </div>

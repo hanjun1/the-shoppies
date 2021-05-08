@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./SearchBar.css";
 
 function SearchBar(props) {
@@ -7,7 +7,6 @@ function SearchBar(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     props.setSearch(searchInput);
-    console.log(props.isSearching);
     props.setIsSearching(!props.isSearching);
   };
 

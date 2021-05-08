@@ -1,5 +1,6 @@
 import React from "react";
 import "./Nominations.css";
+import { v4 as uuidv4 } from "uuid";
 
 function Nominations(props) {
   const handleSubmit = (e) => {
@@ -14,7 +15,7 @@ function Nominations(props) {
       <h2>Nominations</h2>
       <div className="nomination-container">
         {props.nominated.map((movie) => (
-          <div className="movie-container">
+          <div className="movie-container" key={uuidv4()}>
             <div className="image-container">
               <img src={movie.Poster} alt="NOT AVAILABLE" />
             </div>
