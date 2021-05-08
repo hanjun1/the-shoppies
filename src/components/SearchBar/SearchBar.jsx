@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SearchBar.css";
 
 function SearchBar(props) {
@@ -7,7 +7,8 @@ function SearchBar(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     props.setSearch(searchInput);
-    props.getMovie(searchInput);
+    console.log(props.isSearching);
+    props.setIsSearching(!props.isSearching);
   };
 
   const handleSearchChange = (e) => {
@@ -19,7 +20,7 @@ function SearchBar(props) {
       <div className="search-input-container">
         <form onSubmit={handleSubmit}>
           <div className="search-image-container">
-            <button className="">
+            <button>
               <svg
                 width="20"
                 height="20"

@@ -13,11 +13,11 @@
   color: rgb(101, 41, 243);
 }
 
-.Nominations .movies-container {
+.Nominations .nomination-container {
   margin: 1rem;
 }
 
-.Nominations .movies-container p {
+.Nominations .nomination-container p {
   margin: 0;
 }
 
@@ -92,5 +92,11 @@
   }
   .Nominations img {
     width: 12vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .Nominations img {
+    width: 18vw;
   }
 }

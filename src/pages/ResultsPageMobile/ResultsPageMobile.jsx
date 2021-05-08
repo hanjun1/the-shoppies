@@ -20,6 +20,11 @@ function ResultsPageMobile(props) {
         getMovie={props.getMovie}
         search={props.search}
         setSearch={props.setSearch}
+        setResult={props.setResult}
+        result={props.result}
+        setPage={props.setPage}
+        isSearching={props.isSearching}
+        setIsSearching={props.setIsSearching}
       />
       <div className="results-container">
         {showNomination ? (
@@ -33,10 +38,15 @@ function ResultsPageMobile(props) {
             search={props.search}
             nominated={props.nominated}
             setNominated={props.setNominated}
+            setPage={props.setPage}
+            page={props.page}
+            getMovie={props.getMovie}
+            setIsFetching={props.setIsFetching}
+            setIsChangingPage={props.setIsChangingPage}
           />
         )}
       </div>
-      <div class="mobile-show-nomination">
+      <div className="mobile-show-nomination">
         <button onClick={handleOnClick}>
           {showNomination ? "Search Results" : "Nominations"}
         </button>

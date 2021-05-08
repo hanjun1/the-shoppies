@@ -9,9 +9,13 @@ function HomePage(props) {
         The <span>Shoppies</span> 🎉
       </p>
       <SearchBar
+        setResult={props.setResult}
         getMovie={props.getMovie}
         search={props.search}
         setSearch={props.setSearch}
+        setPage={props.setPage}
+        isSearching={props.isSearching}
+        setIsSearching={props.setIsSearching}
       />
     </div>
   );

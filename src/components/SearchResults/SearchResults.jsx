@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./SearchResults.css";
 
 function SearchResults(props) {
@@ -33,14 +33,32 @@ function SearchResults(props) {
     return false;
   };
 
+  const handleScroll = () => {
+    if (
+      document.getElementById("searchresults").offsetHeight +
+        document.getElementById("searchresults").scrollTop !==
+        document.getElementById("searchresults").scrollHeight ||
+      document.getElementById("searchresults").scrollTop === 0
+    )
+      return;
+    props.setIsChangingPage(true);
+  };
+
+  useEffect(() => {
+    document
+      .getElementById("searchresults")
+      .addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="SearchResults">
+    <div className="SearchResults" id="searchresults">
       <h2>
         Results for "<span>{props.search}</span>"...
       </h2>
-      {props.result.Response === "True" ? (
+      {console.log(props.result)}
+      {props.result.length > 0 ? (
         <div className="movies-container">
-          {props.result.Search.map((movie) => (
+          {props.result.map((movie) => (
             <div className="movie-container">
               <div className="image-container">
                 <img src={movie.Poster} alt="NOT AVAILABLE" />

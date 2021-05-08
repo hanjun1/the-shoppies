@@ -1,9 +1,5 @@
 .ResultsPageMobile {
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
 }
 
 .ResultsPageMobile .title {
@@ -24,20 +20,19 @@
 
 .ResultsPageMobile .mobile-show-nomination {
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .ResultsPageMobile .mobile-show-nomination button {
   width: 100%;
   font-size: 1.5rem;
-  padding: 0.7rem;
+  padding: 1rem;
   background: rgb(101, 41, 243);
   color: white;
   font-weight: bold;
   border: none;
-}
-
-.ResultsPageMobile .SearchBar .search-input-container {
-  padding: 0;
+  height: 100%;
 }
 
 @media (max-width: 640px) {

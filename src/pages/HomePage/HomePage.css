@@ -1,13 +1,24 @@
 .HomePage {
   max-width: 1000px;
   margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomePage .SearchBar {
+  width: 80%;
+  margin: 1rem;
 }
 
 .HomePage .title {
   margin: 0rem 1rem;
-  font-size: 11rem;
-  padding: 2rem 0;
+  font-size: 5rem;
   font-weight: bold;
+  text-align: center;
+  height: 10vh;
 }
 
 .HomePage span {
@@ -16,6 +27,6 @@
 
 @media screen and (max-width: 1000px) {
   .HomePage .title {
-    font-size: 16.5vw;
+    font-size: 11.5vw;
   }
 }
