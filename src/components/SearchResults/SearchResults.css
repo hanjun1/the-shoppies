@@ -71,6 +71,7 @@
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .SearchResults .nominate-button-container p {
@@ -82,6 +83,7 @@
 
 .SearchResults #disable-button {
   background: rgb(95, 95, 95);
+  cursor: default;
 }
 
 .SearchResults .no-results {

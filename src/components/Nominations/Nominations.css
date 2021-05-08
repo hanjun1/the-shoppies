@@ -71,6 +71,7 @@
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .Nominations .nominate-button-container p {
