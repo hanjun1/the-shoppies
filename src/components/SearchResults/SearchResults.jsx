@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import "./SearchResults.css";
 
 function SearchResults(props) {
-  const BASE_URL = "http://www.omdbapi.com/?apikey=f724aaa&";
+  const BASE_URL = "https://www.omdbapi.com/?apikey=f724aaa&type=movie&";
 
   const handleSubmit = (e) => {
     e.preventDefault();

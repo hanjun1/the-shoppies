@@ -6,7 +6,7 @@ import Banner from "../../components/Banner/Banner";
 import ResultsPageMobile from "../ResultsPageMobile/ResultsPageMobile";
 import { useMediaQuery } from "react-responsive";
 
-const BASE_URL = "http://www.omdbapi.com/?apikey=f724aaa&";
+const BASE_URL = "https://www.omdbapi.com/?apikey=f724aaa&type=movie&";
 
 function App() {
   const [search, setSearch] = useState(null);
