@@ -65,7 +65,7 @@ function SearchResults(props) {
                 <form onSubmit={handleSubmit}>
                   <input type="hidden" value={movie.imdbID} name="movie" />
                   <p>
-                    {movie.Title} ({movie.Year}) ({movie.Type})
+                    {movie.Title} ({movie.Year})
                   </p>
                   <div className="nominate-button-container">
                     {checkIfNominated(movie.imdbID) ? (
@@ -82,6 +82,10 @@ function SearchResults(props) {
               </div>
             </div>
           ))}
+        </div>
+      ) : props.isGetMovie ? (
+        <div className="loading-container">
+          <p className="loading">Loading...</p>
         </div>
       ) : (
         <p className="no-results">There are no results!</p>

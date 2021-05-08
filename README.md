@@ -11,7 +11,7 @@ Fall 2021 Frontend Developer Internship Challenge by Ryan Kim
 - View the list of films nominated
 - Remove a nominee from nomination list
 - Responsive for all tablets, mobile and desktop view!
-- Infinite scrolling until it reaches end of results (re-fetches everytime you scroll to the bottom!)
+- Infinite scrolling until it reaches end of results (fetches more results everytime you reach the bottom!)
 
 ## Screenshots
 

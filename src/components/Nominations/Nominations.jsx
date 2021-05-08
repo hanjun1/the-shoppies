@@ -23,7 +23,7 @@ function Nominations(props) {
               <form onSubmit={handleSubmit}>
                 <input type="hidden" value={movie.imdbID} name="movie" />
                 <p>
-                  {movie.Title} ({movie.Year}) ({movie.Type})
+                  {movie.Title} ({movie.Year})
                 </p>
                 <div className="nominate-button-container">
                   <button>Remove</button>

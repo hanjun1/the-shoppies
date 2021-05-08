@@ -31,6 +31,7 @@ function ResultsPage(props) {
           getMovie={props.getMovie}
           setIsFetching={props.setIsFetching}
           setIsChangingPage={props.setIsChangingPage}
+          isGetMovie={props.isGetMovie}
         />
         <Nominations
           nominated={props.nominated}

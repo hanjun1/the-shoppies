@@ -94,6 +94,7 @@ function App() {
           setIsSearching={setIsSearching}
           setIsFetching={setIsFetching}
           setIsChangingPage={setIsChangingPage}
+          isGetMovie={isGetMovie}
         />
       ) : (
         <ResultsPage
@@ -109,6 +110,7 @@ function App() {
           isSearching={isSearching}
           setIsSearching={setIsSearching}
           setIsChangingPage={setIsChangingPage}
+          isGetMovie={isGetMovie}
         />
       )}
     </div>

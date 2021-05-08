@@ -43,6 +43,7 @@ function ResultsPageMobile(props) {
             getMovie={props.getMovie}
             setIsFetching={props.setIsFetching}
             setIsChangingPage={props.setIsChangingPage}
+            isGetMovie={props.isGetMovie}
           />
         )}
       </div>
