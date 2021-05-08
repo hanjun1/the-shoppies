@@ -30,3 +30,5 @@ Mobile View:
 ## Technologies Used
 
 - HTML, CSS and ReactJS
+- react-responsive
+- OMDb Api
